@@ -127,7 +127,7 @@ if button:
             price_per_sqm_log=np.log(price_per_sqm)
 
             #opened pickle model and predict the resale price with user data
-            with open(r"C:\My Folder\Tuts\Python\Project\Project 7 - Singapore Flat Resale Prices\copied\Decisiontree.pkl",'rb') as files:
+            with open("Decisiontree.pkl",'rb') as files:
                 model=pickle.load(files)
             
             user_data=np.array([[month, town, flat_type, block, flat_model, lease_commence_date, year, storey_start,
